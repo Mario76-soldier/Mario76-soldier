@@ -14,19 +14,19 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}?after " rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="Title" href="index.html">
+            <a class="Title" href="/">
                 <h2 class="mb-5">Welcome to MudkipLab</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:window.history.back()" href="">Back</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="QnA.html">QnA</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/list">QnA</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,51 +37,23 @@
                 <p>Question Anything!</p>
             </div>
             <div class="board_list_wrap">
-                <div class="board_list">
+                <div class="board_list" style="font-size: 1rem !important;">
                     <div class="top">
                         <div class="num">번호</div>
                         <div class="title">제목</div>
                         <div class="writer">글쓴이</div>
                         <div class="date">작성일</div>
-                        <div class="count">조회</div>
                     </div>
+                    {% for list in postList reversed %}
                     <div>
-                        <div class="num">5</div>
-                        <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
+                        <div class="num">{{ forloop.revcounter }}</div>
+                        <div class="title"><a href="{% url 'view' list.pk %}">{{ list.title }}</a></div>
+                        <div class="writer">{{ list.author }}</div>
+                        <div class="date">{{ list.created_date|date:'Y-m-d H:i' }}</div>
                     </div>
-                    <div>
-                        <div class="num">4</div>
-                        <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">3</div>
-                        <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">2</div>
-                        <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">1</div>
-                        <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
+                    {% endfor %}
                 </div>
-                <div class="board_page">
+                {% comment %} <div class="board_page">
                     <a href="#" class="bt first"><</a>
                     <a href="#" class="bt prev"><<</a>
                     <a href="#" class="num on">1</a>
@@ -91,9 +63,9 @@
                     <a href="#" class="num">5</a>
                     <a href="#" class="bt next">></a>
                     <a href="#" class="bt last">>></a>
-                </div>
+                </div> {% endcomment %}
                 <div class="bt_wrap">
-                    <a href="write.html" class="on">등록</a>
+                    <a href="/write" class="on">등록</a>
                     <!--<a href="#">수정</a>-->
                 </div>
             </div>

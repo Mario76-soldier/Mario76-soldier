@@ -11440,8 +11440,9 @@ section.resume-section .resume-section-content {
 }
 
 .board_wrap {
-  width: 1000px;
-  margin: 100px auto;
+  width: 1500px;
+  margin: 10px auto;
+  
 }
 
 .board_title {
@@ -11470,7 +11471,7 @@ section.resume-section .resume-section-content {
   padding: 10px;
   border: 1px solid #000;
   border-radius: 2px;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .bt_wrap a:first-child {
@@ -11489,7 +11490,6 @@ section.resume-section .resume-section-content {
 
 .board_list > div {
   border-bottom: 1px solid #ddd;
-  font-size: 0;
 }
 
 .board_list > div.top {
@@ -11504,7 +11504,7 @@ section.resume-section .resume-section-content {
   display: inline-block;
   padding: 15px 0;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .board_list > div.top > div {
@@ -11561,7 +11561,7 @@ section.resume-section .resume-section-content {
 
 .board_page a.num {
   padding-top: 9px;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .board_page a.num.on {
@@ -11619,7 +11619,7 @@ section.resume-section .resume-section-content {
 .board_view .info dl dt,
 .board_view .info dl dd {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .board_view .info dl dt {
@@ -11635,7 +11635,7 @@ section.resume-section .resume-section-content {
   padding: 15px;
   border-bottom: 1px solid #000;
   line-height: 160%;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .board_write {
