@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -6,26 +7,26 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Welcome to MudkipLab</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.jpg' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}?after " rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="Title" href="index.html">
+            <a class="Title" href="/">
                 <h2 class="mb-5">Welcome to MudkipLab</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:window.history.back()" href="">Back</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="QnA.html">QnA</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/list">QnA</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,44 +40,31 @@
                 </div>
                 <div class="board_write_wrap">
                     <div class="board_write">
-                        <div class="title">
-                            <dl>
-                                <dt>제목</dt>
-                                <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
-                            </dl>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>글쓴이</dt>
-                                <dd><input type="text" placeholder="글쓴이 입력" value="김이름"></dd>
-                            </dl>
-                            <dl>
-                                <dt>비밀번호</dt>
-                                <dd><input type="password" placeholder="비밀번호 입력" value="1234"></dd>
-                            </dl>
-                        </div>
-                        <div class="cont">
-                            <textarea placeholder="내용 입력">
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.
-        글 내용이 들어갑니다.</textarea>
-                        </div>
-                    </div>
-                    <div class="bt_wrap">
-                        <a href="view.html" class="on">수정</a>
-                        <a href="view.html">취소</a>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="title">
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd><input type="text" placeholder="제목 입력" name="title" value="{{post.title}}"></dd>
+                                </dl>
+                            </div>
+                            <div class="cont">
+                                <dd>
+                                <textarea placeholder="내용 입력" name="text">{{post.text}}</textarea>
+                                </dd>
+                            </div>
+                            <div class="">
+                                <button type="submit" class='on'>등록</input>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            
+        </div>
+    
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
     </body>
 </html>

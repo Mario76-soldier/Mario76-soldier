@@ -11516,7 +11516,7 @@ section.resume-section .resume-section-content {
 }
 
 .board_list .title {
-  width: 60%;
+  width: 40%;
   text-align: left;
 }
 
@@ -11582,7 +11582,7 @@ section.resume-section .resume-section-content {
 .board_view .title {
   padding: 20px 15px;
   border-bottom: 1px dashed #ddd;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .board_view .info {
