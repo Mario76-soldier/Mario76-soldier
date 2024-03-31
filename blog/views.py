@@ -3,6 +3,7 @@ from .models import Post
 from django.shortcuts import redirect
 from django.contrib import auth
 import bcrypt
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -31,10 +32,19 @@ def write(request):
 def edit(request, pk):
     if request.method=='POST':
         post=Post.objects.get(pk=pk)
-        post.title=request.POST['title']
-        post.text=request.POST['text']
-        post.save()
-        post.publish()
+        if bcrypt.checkpw(request.POST['password'].encode('utf-8'), post.password.encode('utf-8')):
+            post.title=request.POST['title']
+            post.text=request.POST['text']
+            post.save()
+            post.publish()
         return redirect('/list/')
     post=Post.objects.get(pk=pk)
     return render(request, 'blog/edit.html', {'post':post})
+
+def delete(request, pk):
+    if request.method=='POST':
+        post=Post.objects.get(pk=pk)
+        if bcrypt.checkpw(request.POST['password'].encode('utf-8'), post.password.encode('utf-8')):
+            post.delete()
+            return HttpResponse(1)
+        return HttpResponse(0)
