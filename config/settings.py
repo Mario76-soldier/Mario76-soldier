@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.mudkiplab.com', '192.168.0.34']
 
+CSRF_TRUSTED_ORIGINS = ["https://www.mudkiplab.com","https://mudkiplab.com"]
 
 # Application definition
 
