@@ -32,7 +32,8 @@
   <img src="https://skillicons.dev/icons?i=raspberrypi,arduino" alt="RaspberryPi & Arduino" height="50"/>
 </p>
 
-### PCB Artwork / KiCad
+### PCB Artwork
+- **KiCad**
 
 ### API Server / Proxy
 <p>
