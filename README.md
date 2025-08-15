@@ -20,7 +20,10 @@
 
 
 </div>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mario76-soldier)](https://github.com/anuraghazra/github-readme-stats)
-![Mario76's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mario76-soldier&theme=default&show_icons=true)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mario76-soldier)](https://github.com/anuraghazra/github-readme-stats)  
+
+![Mario76's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mario76-soldier&theme=default&show_icons=true)  
+
 [![Solved.ac
-프로필](http://mazassumnida.wtf/api/generate_badge?boj=mario201)](https://solved.ac/mario201)
+프로필](http://mazassumnida.wtf/api/generate_badge?boj=mario201)](https://solved.ac/mario201)  
