@@ -26,8 +26,8 @@
  ## Skills
  ### Embedded
  [![My Skills](https://skillicons.dev/icons?i=arduino,raspberrypi,css,wasm)](https://skillicons.dev)
- <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Espressif_logo.svg" alt="ESP32" width="50" height="50" style="margin-right:10px"/>
- <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/STM32_logo.svg" alt="STM32" width="50" height="50" style="margin-right:10px"/>
+ <img src="https://simpleicons.org/icons/espressif.svg" alt="Espressif" width="50" height="50" style="margin-right:10px"/>
+ <img src="https://simpleicons.org/icons/stmicroelectronics.svg" alt="STMicronics" width="50" height="50" style="margin-right:10px"/>
  
 📚 Languages / Library / Tools 📚
 
