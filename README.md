@@ -24,27 +24,32 @@
   - API security
 
  ## Skills
- ### Embedded
- [![My Skills](https://skillicons.dev/icons?i=arduino,raspberrypi,css,wasm)](https://skillicons.dev)
+ ### Embedded/AIoT
  <img src="https://simpleicons.org/icons/espressif.svg" alt="Espressif" width="50" height="50" style="margin-right:10px"/>
  <img src="https://simpleicons.org/icons/stmicroelectronics.svg" alt="STMicronics" width="50" height="50" style="margin-right:10px"/>
+  [![My Skills](https://skillicons.dev/icons?i=raspberrypi,arduino)](https://skillicons.dev)
+
+ ### PCB Artwork tool-Kicad
+
+ ### API Server/proxy
+ [![My Skills](https://skillicons.dev/icons?i=spring,springdatajpa,springsecurity,mysql,django,djangorestframework,nginx)](https://skillicons.dev)
+
+ ### CI/CD
+ [![My Skills](https://skillicons.dev/icons?i=docker,kubernetes,aws)](https://skillicons.dev)
  
-📚 Languages / Library / Tools 📚
+## Portfolio
+- CCK_Ranking_API(private repository)
+- CCK_Recorder(private repository)
+- HTPeo_WasteHandler(private)
+- [Audio_Player with ESP32-C3](https://github.com/Mario76-soldier/Audio_Player)
+- [RFID UID Reader with STM32F103](https://github.com/Mario76-soldier/RFID)
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+## Rewards
+- 2024 수원창업오디션 Team HTPeo-우수상
+- 2024 서울 지능형 사물인터넷(AIoT) 해커톤 Team HTPeo-우수상
+- 2024 SW중심대학 연합 SW Festival 피지컬 컴퓨팅 분야 Team HTPeo-우수상
 
-<a href='https://react.dev/'>![js](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)</a>
-<a href='https://axios-http.com/kr/docs/intro'>![js](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=Axios&logoColor=white)</a>
-<a href='https://recoiljs.org/ko/'>![js](https://img.shields.io/badge/Recoil-3578E5?style=flat&logo=Recoil&logoColor=white)</a>
-<a href='https://styled-components.com/'>![js](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white)</a>
-
-
-<a href='https://grafana.com/'>![js](https://img.shields.io/badge/grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)</a>
-![js](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=white)
-
-
-</div>
-
+## Appendix
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mario76-soldier)](https://github.com/anuraghazra/github-readme-stats)  
 
 ![Mario76's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mario76-soldier&theme=default&show_icons=true)  
