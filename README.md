@@ -24,18 +24,25 @@
   - API security
 
  ## Skills
- ### Embedded/AIoT
- <img src="https://simpleicons.org/icons/espressif.svg" alt="Espressif" width="50" height="50" style="margin-right:10px"/>
- <img src="https://simpleicons.org/icons/stmicroelectronics.svg" alt="STMicronics" width="50" height="50" style="margin-right:10px"/>
-  [![My Skills](https://skillicons.dev/icons?i=raspberrypi,arduino)](https://skillicons.dev)
 
- ### PCB Artwork tool-Kicad
+### Embedded / AIoT
+<p>
+  <img src="https://simpleicons.org/icons/espressif.svg" alt="Espressif" width="50" height="50" style="margin-right:10px"/>
+  <img src="https://simpleicons.org/icons/stmicroelectronics.svg" alt="STM32" width="50" height="50" style="margin-right:10px"/>
+  <img src="https://skillicons.dev/icons?i=raspberrypi,arduino" alt="RaspberryPi & Arduino" width="50" height="50"/>
+</p>
 
- ### API Server/proxy
- [![My Skills](https://skillicons.dev/icons?i=spring,springdatajpa,springsecurity,mysql,django,djangorestframework,nginx)](https://skillicons.dev)
+### PCB Artwork / KiCad
 
- ### CI/CD
- [![My Skills](https://skillicons.dev/icons?i=docker,kubernetes,aws)](https://skillicons.dev)
+### API Server / Proxy
+<p>
+  <img src="https://skillicons.dev/icons?i=spring,springdatajpa,springsecurity,mysql,django,djangorestframework,nginx" alt="Backend" width="50" height="50"/>
+</p>
+
+### CI/CD
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws" alt="CI/CD" width="50" height="50"/>
+</p>
  
 ## Portfolio
 - CCK_Ranking_API(private repository)
