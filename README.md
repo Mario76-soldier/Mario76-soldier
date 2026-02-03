@@ -37,7 +37,7 @@
 
 ### API Server / Proxy
 <p>
-  <img src="https://skillicons.dev/icons?i=spring,mysql,django,nginx" alt="Backend" height="50"/>
+  <img src="https://skillicons.dev/icons?i=spring,mysql,fastapi,nginx" alt="Backend" height="50"/>
 </p>
 
 ### CI/CD
